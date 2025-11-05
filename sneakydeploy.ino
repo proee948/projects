@@ -3,7 +3,7 @@
 void fastType(const char* text) {
   while (*text) {
     Keyboard.write(*text++);
-    delay(1); 
+    delay(1); //smanji da bude brze
   }
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
@@ -39,6 +39,7 @@ void setup() {
 
 void loop() {}
 //THIS IS MEANT TO BE USED WITH ATmega32u4 CHIPSET, but any HID compatible board can be used...
+
 
 
 
