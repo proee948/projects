@@ -36,7 +36,8 @@ void setup() {
 }
 
 void loop() {}
-//THIS IS MEANT TO BE USED WITH ATmega32u4 CHIPSET, but any HID compatible board can be used...
+//made for atmega32u4 schipset, but any HID compatible board can be used...
+
 
 
 
